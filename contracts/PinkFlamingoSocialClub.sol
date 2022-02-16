@@ -14,7 +14,7 @@ contract PinkFlamingoSocialClub is ERC721Enumerable {
  */
   address public admin;
   address public router;
-  uint256 public nextTokenId = 778;
+  uint256 public nextTokenId;
   uint256 public maxTokenId;
   uint256 public tokenPriceInWei;
   string public baseURI;
@@ -34,10 +34,12 @@ contract PinkFlamingoSocialClub is ERC721Enumerable {
     address _router,
     uint256 _maxTokenId,
     uint256 _tokenPriceInWei,
+    uint256 _nextTokenId,
     address[] memory _minters
   ) ERC721(_tokenName, _tokenSymbol) {
     admin = msg.sender;
     maxTokenId = _maxTokenId;
+    nextTokenId = _nextTokenId;
     router = _router;
     tokenPriceInWei = _tokenPriceInWei;
     loadMinters(_minters);
