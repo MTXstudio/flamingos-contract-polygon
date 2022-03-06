@@ -90,7 +90,7 @@ contract PinkFlamingoSocialClub is ERC721Enumerable {
   function contractURI() public pure returns (string memory) {
     return
       string(
-        'https://gateway.pinata.cloud/ipfs/QmPHQECr5EdhTgeWDjKJL7VNcSsFgrTeTVTgFtLpKmNbaA'
+        'https://algobits.mypinata.cloud/ipfs/QmQFepGqKVKgEcpyEbVuXuNMeS6pG4PyUbWwiY8aDmLDpz'
       );
   }
 
