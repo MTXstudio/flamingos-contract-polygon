@@ -101,7 +101,7 @@ contract PinkFlamingoSocialClub is ERC721Enumerable {
     onlyValidTokenId(_tokenId)
     returns (string memory)
   {
-    return string(abi.encodePacked(baseURI, '/nfts/', Strings.toString(_tokenId)));
+    return string(abi.encodePacked(baseURI, '/', Strings.toString(_tokenId)));
   }
 
   /**
